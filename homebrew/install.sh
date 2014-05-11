@@ -13,7 +13,7 @@ then
 fi
 
 # Install homebrew packages
-brew install wget grc coreutils spark
+brew install wget grc coreutils spark mtr
 
 # https://github.com/github/hub
 brew install hub
