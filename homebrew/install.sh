@@ -18,4 +18,7 @@ brew install wget grc coreutils spark mtr mosh
 # https://github.com/github/hub
 brew install hub
 
+# https://github.com/jakubroztocil/httpie
+brew install httpie
+
 exit 0
