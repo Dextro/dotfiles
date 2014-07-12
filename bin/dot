@@ -12,5 +12,5 @@ export ZSH=$HOME/.dotfiles
 # Upgrade homebrew
 brew update
 
-# Install homebrew packages
-$ZSH/homebrew/install.sh 2>&1
+# Upgrade all outdated brew packages
+brew upgrade `brew outdated`
