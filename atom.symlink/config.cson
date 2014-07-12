@@ -1,11 +1,11 @@
 'release-notes':
-  'viewedVersion': '0.94.0'
+  'viewedVersion': '0.95.0'
 'welcome':
   'showOnStartup': false
 'editor':
   'showIndentGuide': false
   'fontFamily': 'Source Code Pro'
-  'fontSize': 12
+  'fontSize': 13
 'core':
   'audioBeep': false
   'disabledPackages': [
