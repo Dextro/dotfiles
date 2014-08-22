@@ -11,9 +11,19 @@
   'disabledPackages': [
     'exception-reporting'
     'metrics'
+    'linter'
+    'linter-csslint'
+    'linter-js-yaml'
+    'linter-jscs'
+    'linter-php'
+    'linter-rubocop'
+    'linter-ruby'
   ]
   'projectHome': '~/Projects'
   'themes': [
     'seti-ui'
     'seti-syntax'
   ]
+'minimap':
+  'autoToggle': true
+'linter': {}
