@@ -9,8 +9,11 @@
 'core':
   'audioBeep': false
   'disabledPackages': [
-    'background-tips'
     'exception-reporting'
     'metrics'
   ]
   'projectHome': '~/Projects'
+  'themes': [
+    'seti-ui'
+    'seti-syntax'
+  ]
