@@ -26,4 +26,6 @@
   ]
 'minimap':
   'autoToggle': true
+  'displayPluginsControls': false
+  'plugins': {}
 'linter': {}
