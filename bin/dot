@@ -14,3 +14,6 @@ brew update
 
 # Upgrade all outdated brew packages
 brew upgrade `brew outdated`
+
+# install/upgrade the atom packages
+apm stars -i
