@@ -12,6 +12,9 @@ then
   ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" > /tmp/homebrew-install.log
 fi
 
+# update
+brew update
+
 # Install homebrew packages
 brew install wget grc coreutils spark mtr mosh
 
@@ -20,5 +23,8 @@ brew install hub
 
 # https://github.com/jakubroztocil/httpie
 brew install httpie
+
+# https://github.com/sstephenson/rbenv
+brew install rbenv ruby-build
 
 exit 0
