@@ -16,7 +16,7 @@ fi
 brew update
 
 # Install homebrew packages
-brew install wget grc coreutils spark mtr mosh
+brew install wget grc coreutils spark mtr mosh ack
 
 # https://github.com/github/hub
 brew install hub
