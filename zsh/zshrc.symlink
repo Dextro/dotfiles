@@ -38,6 +38,3 @@ do
 done
 
 unset config_files
-
-# enable rbenv shims and autocompletion
-eval "$(rbenv init -)"
