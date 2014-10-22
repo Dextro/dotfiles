@@ -16,7 +16,7 @@ fi
 brew update
 
 # Install homebrew packages
-brew install wget grc coreutils spark mtr mosh ack
+brew install wget grc coreutils spark mtr mosh ack gpg
 
 # https://github.com/github/hub
 brew install hub
@@ -26,5 +26,8 @@ brew install httpie
 
 # https://github.com/sstephenson/rbenv
 brew install rbenv ruby-build
+
+# https://keybase.io
+brew install keybase
 
 exit 0
