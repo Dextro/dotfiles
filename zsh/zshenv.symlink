@@ -14,3 +14,9 @@ export LC_TELEPHONE="en_GB.UTF-8"
 export LC_MEASUREMENT="en_GB.UTF-8"
 export LC_IDENTIFICATION="en_GB.UTF-8"
 export LC_ALL="en_GB.UTF-8"
+
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
+# your project folder that we can `c [tab]` to
+export PROJECTS=~/Projects
