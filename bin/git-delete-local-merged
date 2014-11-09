@@ -4,5 +4,7 @@
 # our favorite @tekkub:
 #
 #   https://plus.google.com/115587336092124934674/posts/dXsagsvLakJ
+#
+# TODO warning before executing
 
 git branch -d `git branch --merged | grep -v '^*' | grep -v 'master' | tr -d '\n'`

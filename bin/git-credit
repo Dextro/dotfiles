@@ -9,5 +9,6 @@
 #
 #   git credit "Zach Holman" zach@example.com
 #
+# TODO warning before executing
 
 git commit --amend --author "$1 <$2>" -C HEAD

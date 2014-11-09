@@ -7,6 +7,8 @@
 # Examples
 #
 #   git nuke add-git-nuke
+#
+# TODO warning before executing
 
 git branch -D $1
 git push origin :$1
