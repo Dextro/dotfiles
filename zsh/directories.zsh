@@ -51,9 +51,9 @@ cd () {
     cd ../../../..
   elif [[ "x$*" == "x......" ]]; then
     cd ../../../../..
-  elif [ -d ~/.autoenv ]; then
+  # Directory-based Environments - https://github.com/kennethreitz/autoenv
+  elif [ -d /usr/local/opt/autoenv ]; then
     source /usr/local/opt/autoenv/activate.sh
-    autoenv_cd "$@"
     autoenv_init
   else
     builtin cd "$@"
