@@ -16,3 +16,4 @@ setopt append_history # sessions will append their history list to the history f
 
 # history
 alias history='fc -il 1'
+alias h='history'
