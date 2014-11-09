@@ -18,5 +18,5 @@ export LC_ALL="en_GB.UTF-8"
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# your project folder that we can `c [tab]` to
+# your project folder that we can `p [tab]` to
 export PROJECTS=~/Projects
