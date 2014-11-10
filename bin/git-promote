@@ -5,6 +5,7 @@
 #
 # Thanks to ENTP:
 # http://hoth.entp.com/2008/11/10/improving-my-git-workflow
+# TODO warning before executing
 
 curr_branch=$(git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||')
 

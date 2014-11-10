@@ -1,5 +1,7 @@
 #!/bin/sh
 #
 # Use the last commit message and amend your stuffs.
+#
+# TODO warning before executing
 
 git commit --amend -C HEAD

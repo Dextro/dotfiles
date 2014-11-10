@@ -12,11 +12,46 @@ then
   ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" > /tmp/homebrew-install.log
 fi
 
-# update
+# Make sure we’re using the latest Homebrew
 brew update
 
-# Install homebrew packages
-brew install wget grc coreutils spark mtr mosh ack gpg
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install GNU core utilities (those that come with OS X are outdated)
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+brew install coreutils
+# Install some other useful utilities like `sponge`
+brew install moreutils
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
+brew install findutils
+# Install GNU `sed`, overwriting the built-in `sed`
+brew install gnu-sed --default-names
+# Install Bash 4
+brew install bash
+
+# Install wget with IRI support
+brew install wget --enable-iri
+
+# Install more recent versions of some OS X tools
+brew install vim --override-system-vi
+brew install homebrew/dupes/grep
+brew install homebrew/php/php55 --with-gmp
+brew install git
+
+# Install usefull binaries
+brew install exiv2
+brew install grc
+brew install spark
+brew install mtr
+brew install mosh
+brew install ack
+brew install gpg
+brew install node
+brew install tree
+brew install imagemagick --with-webp
+brew install nmap
+brew install rename
 
 # https://github.com/github/hub
 brew install hub
