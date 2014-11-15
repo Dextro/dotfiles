@@ -5,6 +5,12 @@
 #
 #   https://plus.google.com/115587336092124934674/posts/dXsagsvLakJ
 #
-# TODO warning before executing
+# warning before executing
+read -p "Are you sure you want to delete all local branches that have been merged into HEAD? " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    exit 1
+fi
 
 git branch -d `git branch --merged | grep -v '^*' | grep -v 'master' | tr -d '\n'`
