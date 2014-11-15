@@ -9,6 +9,12 @@
 #
 #   git credit "Zach Holman" zach@example.com
 #
-# TODO warning before executing
+# warning before executing
+read -p "Are you sure you want credit someone in the last commit? (git credit <name> <email>) " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    exit 1
+fi
 
 git commit --amend --author "$1 <$2>" -C HEAD
