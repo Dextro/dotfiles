@@ -8,6 +8,7 @@
     fontSize: 13
     showIndentGuide: false
     invisibles: {}
+    showInvisibles: true
   core:
     disabledPackages: [
       "exception-reporting"
