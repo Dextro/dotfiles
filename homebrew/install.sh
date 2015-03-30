@@ -68,4 +68,7 @@ brew install keybase
 # https://github.com/jakubroztocil/httpie
 brew install httpie
 
+# http://jonas.nitro.dk/tig/
+brew install tig
+
 exit 0
