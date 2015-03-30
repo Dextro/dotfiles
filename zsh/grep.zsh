@@ -1,6 +1,5 @@
 #
 # Color grep results
-# Examples: http://rubyurl.com/ZXv
 #
 
 GREP_OPTIONS="--color=auto"
