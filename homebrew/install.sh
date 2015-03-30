@@ -65,4 +65,7 @@ brew install rbenv ruby-build
 # https://keybase.io
 brew install keybase
 
+# https://github.com/jakubroztocil/httpie
+brew install httpie
+
 exit 0
