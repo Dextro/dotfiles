@@ -65,10 +65,14 @@ brew install rbenv ruby-build
 # https://keybase.io
 brew install keybase
 
-# https://github.com/jakubroztocil/httpie
-brew install httpie
-
 # http://jonas.nitro.dk/tig/
 brew install tig
+
+# Homebrew cask
+brew install caskroom/cask/brew-cask
+
+brew cask install google-chrome
+brew cask install moom
+brew cask install google-cloud-sdk
 
 exit 0
