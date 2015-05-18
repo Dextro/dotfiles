@@ -22,7 +22,7 @@
       "linter-ruby"
     ]
     themes: [
-      "seti-ui"
+      "isotope-ui"
       "seti-syntax"
     ]
     projectHome: "~/Projects"
@@ -32,3 +32,6 @@
     displayPluginsControls: false
     plugins: {}
   linter: {}
+  "isotope-ui":
+    backgroundColor: "false"
+    fontFamily: "Source Sans Pro"
