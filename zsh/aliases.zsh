@@ -11,3 +11,6 @@ genpwd() {
   echo 'new password: '$PW;
   echo $PW | pbcopy;
 }
+
+# clear cache of Mac OS X 10.10
+alias cc="sudo discoveryutil udnsflushcaches && echo 'cache cleared'"
