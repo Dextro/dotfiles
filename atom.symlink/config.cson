@@ -23,7 +23,7 @@
       "linter-ruby"
     ]
     themes: [
-      "isotope-light-ui"
+      "isotope-ui"
       "atom-light-syntax"
     ]
     projectHome: "~/Projects"
