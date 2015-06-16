@@ -20,3 +20,8 @@ export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `p [tab]` to
 export PROJECTS=~/Projects
+
+# chef
+EXPORT CHEF_USER="bertpattyn"
+EXPORT CHEF_EMAIL="bert.pattyn@wijs.be"
+EXPORT CHEF_ORG="wijs"
