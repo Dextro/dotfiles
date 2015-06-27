@@ -7,8 +7,7 @@
     fontFamily: "Source Code Pro"
     fontSize: 13
     showIndentGuide: false
-    invisibles:
-      {}
+    invisibles: {}
     showInvisibles: true
   core:
     disabledPackages: [
@@ -31,10 +30,8 @@
   minimap:
     autoToggle: true
     displayPluginsControls: false
-    plugins:
-      {}
-  linter:
-    {}
+    plugins: {}
+  linter: {}
   "isotope-ui":
     backgroundColor: "false"
     fontFamily: "Source Sans Pro"
