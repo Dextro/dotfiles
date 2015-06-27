@@ -22,6 +22,6 @@ export ZSH=$HOME/.dotfiles
 export PROJECTS=~/Projects
 
 # chef
-EXPORT CHEF_USER="bertpattyn"
-EXPORT CHEF_EMAIL="bert.pattyn@wijs.be"
-EXPORT CHEF_ORG="wijs"
+export CHEF_USER="bertpattyn"
+export CHEF_EMAIL="bert.pattyn@wijs.be"
+export CHEF_ORG="wijs"
