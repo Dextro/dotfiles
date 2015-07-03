@@ -3,4 +3,9 @@ syntax on
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
 
+execute pathogen#infect()
+
 set backspace=indent,eol,start
+
+set background=dark
+colorscheme solarized
