@@ -12,5 +12,8 @@ genpwd() {
   echo $PW | pbcopy;
 }
 
-# clear cache of Mac OS X 10.10
-alias cc="sudo discoveryutil udnsflushcaches && echo 'cache cleared'"
+# clear cache of Mac OS X 10.10.4
+alias cc="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; echo 'cache cleared';"
+
+# clear cache of Mac OS X 10.10.3 and lower
+# alias cc="sudo discoveryutil udnsflushcaches && echo 'cache cleared'"
