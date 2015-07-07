@@ -4,3 +4,6 @@
 [submodule "vim/vim.symlink/bundle/vim-sensible"]
 	path = vim/vim.symlink/bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+[submodule "ssh.symlink"]
+	path = ssh.symlink
+	url = git@github.ncube.be:operations/ssh-config.git
