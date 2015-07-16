@@ -74,6 +74,9 @@ brew instal tmux
 # https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 brew install reattach-to-user-namespace
 
+# packer
+brew install packer
+
 # Homebrew cask
 brew install caskroom/cask/brew-cask
 
