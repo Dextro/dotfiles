@@ -61,6 +61,8 @@ set-option -g default-command "reattach-to-user-namespace -l zsh"
 setw -g monitor-activity on
 set -g visual-activity on
 
+bind m run "if [[ `tmux show-option -w | grep mode-mouse.*on` ]]; then toggle=off; else toggle=on; fi; tmux display-message \"mouse tmux: \$toggle\"; tmux set-option -w mode-mouse \$toggle &> /dev/null; for cmd in mouse-select-pane mouse-resize-pane mouse-select-window; do tmux set-option -g \$cmd \$toggle &> /dev/null; done;"
+
 #### COLOUR (Solarized dark)
 
 # default statusbar colors
