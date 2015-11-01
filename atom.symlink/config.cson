@@ -38,3 +38,5 @@
   "isotope-light-ui":
     fontFamily: "System Default"
     matchEditorFont: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
