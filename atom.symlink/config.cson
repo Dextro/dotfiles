@@ -20,6 +20,7 @@
       "linter-php"
       "linter-rubocop"
       "linter-ruby"
+      "minimap"
     ]
     themes: [
       "isotope-ui"
