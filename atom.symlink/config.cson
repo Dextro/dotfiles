@@ -15,16 +15,14 @@
       "metrics"
       "linter"
       "linter-csslint"
-      "linter-js-yaml"
       "linter-jscs"
       "linter-php"
       "linter-rubocop"
       "linter-ruby"
-      "minimap"
     ]
     themes: [
       "isotope-ui"
-      "atom-light-syntax"
+      "atom-dark-syntax"
     ]
     projectHome: "~/Projects"
     audioBeep: false
