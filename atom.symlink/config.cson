@@ -1,15 +1,6 @@
 "*":
-  "release-notes":
-    viewedVersion: "0.95.0"
-  welcome:
-    showOnStartup: false
-  editor:
-    fontFamily: "Source Code Pro"
-    fontSize: 13
-    showIndentGuide: false
-    invisibles: {}
-    showInvisibles: true
   core:
+    audioBeep: false
     disabledPackages: [
       "exception-reporting"
       "metrics"
@@ -20,22 +11,30 @@
       "linter-rubocop"
       "linter-ruby"
     ]
+    projectHome: "~/Projects"
     themes: [
       "isotope-ui"
       "atom-dark-syntax"
     ]
-    projectHome: "~/Projects"
-    audioBeep: false
+  editor:
+    fontFamily: "Source Code Pro"
+    invisibles: {}
+    showIndentGuide: false
+    showInvisibles: true
+  "isotope-light-ui":
+    fontFamily: "System Default"
+    matchEditorFont: true
+  "isotope-ui":
+    backgroundColor: "false"
+    fontFamily: "Source Sans Pro"
+  linter: {}
   minimap:
     autoToggle: true
     displayPluginsControls: false
     plugins: {}
-  linter: {}
-  "isotope-ui":
-    backgroundColor: "false"
-    fontFamily: "Source Sans Pro"
-  "isotope-light-ui":
-    fontFamily: "System Default"
-    matchEditorFont: true
+  "release-notes":
+    viewedVersion: "0.95.0"
   "tree-view":
     hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
