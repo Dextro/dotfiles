@@ -1,3 +1,4 @@
+atom.symlink/blob-store/
 atom.symlink/.node-gyp
 atom.symlink/.storage
 atom.symlink/.apm
@@ -5,6 +6,5 @@ atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
 atom.symlink/compile-cache
-atom.symlink/blob-store
 
 git/gitconfig.symlink
