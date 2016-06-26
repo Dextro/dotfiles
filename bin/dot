@@ -5,6 +5,11 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
+# upgrade mac os x
+echo "### upgrade Mac OS X..."
+sudo softwareupdate -iva
+echo "done!"
+
 # Upgrade homebrew
 echo "### upgrade homebrew..."
 brew update
@@ -24,9 +29,4 @@ echo "done!"
 # Upgrade out of date packages installed to ~/.atom/packages
 echo "### upgrade out of date packages..."
 apm --color upgrade
-echo "done!"
-
-# upgrade mac os x
-echo "### upgrade Mac OS X..."
-sudo softwareupdate -iva
 echo "done!"
