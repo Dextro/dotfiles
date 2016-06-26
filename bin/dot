@@ -6,10 +6,27 @@
 # to make sure you're on the latest and greatest.
 
 # Upgrade homebrew
+echo "### upgrade homebrew..."
 brew update
+echo "done!"
 
 # Upgrade all outdated brew packages
+echo "### upgrade all outdated brew packages..."
 brew upgrade `brew outdated`
+echo "done!"
 
-# install/upgrade the atom packages
-apm stars -i
+# Deletes all packages in the node_modules folder that are not referenced
+# as a dependency in the package.json file.
+echo "### delete unused packages..."
+apm --color clean
+echo "done!"
+
+# Upgrade out of date packages installed to ~/.atom/packages
+echo "### upgrade out of date packages..."
+apm --color upgrade
+echo "done!"
+
+# upgrade mac os x
+echo "### upgrade Mac OS X..."
+sudo softwareupdate -iva
+echo "done!"
