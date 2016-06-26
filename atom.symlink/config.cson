@@ -10,7 +10,9 @@
       "linter-php"
       "linter-rubocop"
       "linter-ruby"
+      "activate-power-mode"
     ]
+    excludeVcsIgnoredPaths: false
     projectHome: "~/Projects"
     themes: [
       "isotope-ui"
@@ -35,6 +37,6 @@
   "release-notes":
     viewedVersion: "0.95.0"
   "tree-view":
-    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
