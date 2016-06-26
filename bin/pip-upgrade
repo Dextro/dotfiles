@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# upgrade all python pip packages
+
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
