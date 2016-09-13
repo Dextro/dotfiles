@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# use pip without virtualenv (because PIP_REQUIRE_VIRTUALENV = true by default in our setup)
+
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
