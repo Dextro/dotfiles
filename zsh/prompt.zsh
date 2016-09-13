@@ -1,6 +1,7 @@
 # load colors - https://wiki.archlinux.org/index.php/zsh#Colors
-autoload -Uz colors && colors
 
+setopt prompt_subst
+autoload -Uz colors && colors
 
 unpushed () {
   $git cherry -v @{upstream} 2>/dev/null
@@ -47,7 +48,7 @@ python_virtualenv() {
   fi
 }
 
-rb_prompt() {
+ruby_prompt() {
   if ! [[ -z "$(ruby_version)" ]]
   then
     echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
@@ -58,16 +59,16 @@ rb_prompt() {
 
 # dump the current git branch
 git_current_branch() {
-  echo $($git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
+  echo $(git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
 }
 
 # dump the color to use based on the state of the git repo
 git_dirty() {
-  if $(! $git status -s &> /dev/null)
+  if $(! git status -s &> /dev/null)
   then
     echo ""
   else
-    if [[ $($git status --porcelain) == "" ]]
+    if [[ $(git status --porcelain) == "" ]]
     then
       echo "$fg[green]"
     else
@@ -90,17 +91,10 @@ get_pwd() {
 precmd() {
   title "zsh" "%m" "%55<...<%~"
   # export PROMPT=$' in $(directory_name) $(git_dirty)$(need_push)\n› '
-  local LEFT
-  local RIGHT
-  local RIGHTWIDTH
-
-  LEFT="$fg[cyan]%m: $fg[yellow]$(get_pwd)"
-  RIGHT="$(git_prompt_info)"
-  RIGHTWIDTH=$(($COLUMNS-${#LEFT}+${#RIGHT}))
 
   export PROMPT="
-$LEFT${(l:$RIGHTWIDTH:::)RIGHT}
+$fg[cyan]%m: $fg[yellow]$(get_pwd)
 $reset_color→ "
   # export RPROMPT="%{$fg_bold[cyan]%} R $(rb_prompt)- P $(python_version)$(python_virtualenv)%{$reset_color%}"
-  export RPROMPT=""
+  export RPROMPT="$(git_prompt_string)"
 }
