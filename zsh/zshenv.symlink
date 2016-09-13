@@ -25,3 +25,8 @@ export PROJECTS=~/Projects
 export CHEF_USER="bertpattyn"
 export CHEF_EMAIL="bert.pattyn@wijs.be"
 export CHEF_ORG="wijs"
+
+# java
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home
+export JAVA_HOME
+export PATH=$PATH:$JAVA_HOME/bin
