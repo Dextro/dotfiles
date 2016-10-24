@@ -93,7 +93,7 @@ precmd() {
   # export PROMPT=$' in $(directory_name) $(git_dirty)$(need_push)\n› '
 
   export PROMPT="
-$fg[magenta]%*$reset_color - $fg[cyan]%m$reset_color $fg[yellow]$(get_pwd)
+%{$fg[magenta]%}%*%{$reset_color%} - %{$fg[cyan]%}%m%{$reset_color%} %{$fg[yellow]%}$(get_pwd)
 $reset_color→ "
   # export RPROMPT="%{$fg_bold[cyan]%} R $(rb_prompt)- P $(python_version)$(python_virtualenv)%{$reset_color%}"
   export RPROMPT="$(git_prompt_string)"
