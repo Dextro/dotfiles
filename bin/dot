@@ -7,7 +7,7 @@
 
 # upgrade mac os x
 echo "### upgrade Mac OS X..."
-sudo softwareupdate -iva
+sudo softwareupdate -ia
 echo "done!"
 
 # Upgrade homebrew
