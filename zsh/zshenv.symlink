@@ -21,11 +21,6 @@ export ZSH=$HOME/.dotfiles
 # your project folder that we can `p [tab]` to
 export PROJECTS=~/Projects
 
-# chef
-export CHEF_USER="bertpattyn"
-export CHEF_EMAIL="bert.pattyn@wijs.be"
-export CHEF_ORG="wijs"
-
 # java
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home
 export JAVA_HOME
