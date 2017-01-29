@@ -44,17 +44,17 @@ ruby_prompt() {
   fi
 }
 
-# Get the current working directory
-get_pwd() {
-  echo "${PWD/$HOME/~}"
-}
-
 precmd() {
-  # title "zsh" "%m" "%55<...<%~"
-  # export PROMPT=$' in $(directory_name) $(git_dirty)$(need_push)\n› '
+  # set title of the window/tab
+  case $TERM in
+    xterm*)
+      print -Pn "\e]0;%n: %~\a"
+      ;;
+  esac
 
+  # set prompt
   export PROMPT="
-%{$fg[magenta]%}%*%{$reset_color%} - %{$fg[yellow]%}$(get_pwd)
+%{$fg[magenta]%}%*%{$reset_color%} - %{$fg[yellow]%}%~
 %{$reset_color%}→ "
 
   export RPROMPT="$(git_prompt_string)"
