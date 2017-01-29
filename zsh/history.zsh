@@ -15,5 +15,5 @@ setopt share_history # share history between sessions
 setopt append_history # sessions will append their history list to the history file, rather than overwrite it
 
 # history
-alias history='fc -il 1'
+alias history='fc -ilr 1 | less'
 alias h='history'
