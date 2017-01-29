@@ -3,19 +3,6 @@
 setopt prompt_subst
 autoload -Uz colors && colors
 
-unpushed () {
-  $git cherry -v @{upstream} 2>/dev/null
-}
-
-need_push () {
-  if [[ $(unpushed) == "" ]]
-  then
-    echo " "
-  else
-    echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
-  fi
-}
-
 ruby_version() {
   if (( $+commands[rbenv] ))
   then
@@ -57,44 +44,18 @@ ruby_prompt() {
   fi
 }
 
-# dump the current git branch
-git_current_branch() {
-  echo $(git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
-}
-
-# dump the color to use based on the state of the git repo
-git_dirty() {
-  if $(! git status -s &> /dev/null)
-  then
-    echo ""
-  else
-    if [[ $(git status --porcelain) == "" ]]
-    then
-      echo "$fg[green]"
-    else
-      echo "$fg[red]"
-    fi
-  fi
-}
-
-# dump git prompt information
-function git_prompt_info() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "$(git_dirty)$(git_current_branch)$reset_color"
-}
-
 # Get the current working directory
 get_pwd() {
   echo "${PWD/$HOME/~}"
 }
 
 precmd() {
-  title "zsh" "%m" "%55<...<%~"
+  # title "zsh" "%m" "%55<...<%~"
   # export PROMPT=$' in $(directory_name) $(git_dirty)$(need_push)\n› '
 
   export PROMPT="
-%{$fg[magenta]%}%*%{$reset_color%} - %{$fg[cyan]%}%m%{$reset_color%} %{$fg[yellow]%}$(get_pwd)
-$reset_color→ "
-  # export RPROMPT="%{$fg_bold[cyan]%} R $(rb_prompt)- P $(python_version)$(python_virtualenv)%{$reset_color%}"
+%{$fg[magenta]%}%*%{$reset_color%} - %{$fg[yellow]%}$(get_pwd)
+%{$reset_color%}→ "
+
   export RPROMPT="$(git_prompt_string)"
 }
