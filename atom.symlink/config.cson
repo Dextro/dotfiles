@@ -12,11 +12,13 @@
       "linter-ruby"
       "activate-power-mode"
     ]
-    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      "pip-selfcheck.json"
+    ]
     projectHome: "~/Projects"
     telemetryConsent: "no"
     themes: [
-      "isotope-ui"
+      "atom-dark-ui"
       "atom-dark-syntax"
     ]
   editor:
@@ -38,6 +40,8 @@
   "release-notes":
     viewedVersion: "0.95.0"
   "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
