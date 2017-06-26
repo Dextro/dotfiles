@@ -4,12 +4,6 @@
     disabledPackages: [
       "exception-reporting"
       "metrics"
-      "linter"
-      "linter-csslint"
-      "linter-jscs"
-      "linter-php"
-      "linter-rubocop"
-      "linter-ruby"
       "activate-power-mode"
     ]
     ignoredNames: [
@@ -32,7 +26,9 @@
   "isotope-ui":
     backgroundColor: "false"
     fontFamily: "Source Sans Pro"
-  linter: {}
+  "linter-ui-default":
+    panelHeight: 81
+    showPanel: true
   minimap:
     autoToggle: true
     displayPluginsControls: false
