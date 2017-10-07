@@ -54,8 +54,8 @@ precmd() {
 
   # set prompt
   export PROMPT="
-%{$fg[magenta]%}%*%{$reset_color%} - %{$fg[yellow]%}%~
+%{$fg[magenta]%}%*%{$reset_color%} - %{$fg[yellow]%}%~ $(git_prompt_string)%{$reset_color%} [%{$fg[cyan]%}$(python_version)$(python_virtualenv)%{$reset_color%}] 
 %{$reset_color%}→ "
 
-  export RPROMPT="$(git_prompt_string)"
+  export RPROMPT=""
 }
