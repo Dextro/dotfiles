@@ -1,11 +1,17 @@
 "*":
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui": {}
+    use: {}
+  "autocomplete-python":
+    useKite: false
   core:
     audioBeep: false
     disabledPackages: [
       "exception-reporting"
       "metrics"
-      "activate-power-mode"
+      "linter"
     ]
+    excludeVcsIgnoredPaths: false
     ignoredNames: [
       "pip-selfcheck.json"
     ]
@@ -20,6 +26,7 @@
     invisibles: {}
     showIndentGuide: false
     showInvisibles: true
+  "ide-python": {}
   "isotope-light-ui":
     fontFamily: "System Default"
     matchEditorFont: true
@@ -37,7 +44,6 @@
     viewedVersion: "0.95.0"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
