@@ -1,8 +1,8 @@
 # Git prompt based on https://gist.github.com/joshdick/4415470
 
 # Modify the colors and symbols in these variables as desired.
-GIT_PROMPT_PREFIX="%{$fg[white]%}[%{$reset_color%}"
-GIT_PROMPT_SUFFIX="%{$fg[white]%}]%{$reset_color%}"
+GIT_PROMPT_PREFIX="%{$reset_color%}[%{$reset_color%}"
+GIT_PROMPT_SUFFIX="%{$reset_color%}]%{$reset_color%}"
 GIT_PROMPT_AHEAD="%{$fg[red]%}ANUM%{$reset_color%}"
 GIT_PROMPT_BEHIND="%{$fg[cyan]%}BNUM%{$reset_color%}"
 GIT_PROMPT_MERGING="%{$fg[magenta]%}⚡︎%{$reset_color%}"
