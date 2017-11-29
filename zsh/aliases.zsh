@@ -7,9 +7,10 @@ alias mtr="nocorrect sudo mtr"
 # generate password
 # optional variable is the length of the password (otherwise 26)
 genpwd() {
-  PW=$(openssl rand -base64 32 | head -c${1-26});
-  echo 'new password: '$PW;
-  echo $PW | pbcopy;
+  string=$(openssl rand -base64 32);
+  substring=$string[0,${1-26}];
+  echo 'new password: '$substring;
+  echo $substring | tr -d '\n' | pbcopy;
 }
 
 # clear cache of Mac OS X 10.10.4
