@@ -34,7 +34,6 @@
     backgroundColor: "false"
     fontFamily: "Source Sans Pro"
   "linter-ui-default":
-    panelHeight: 81
     showPanel: true
   minimap:
     autoToggle: true
