@@ -21,6 +21,10 @@ echo "### homebrew: upgrade all outdated brew packages..."
 brew upgrade
 echo "done!"
 
+echo "### homebrew: upgrade all outdated brew cask packages..."
+brew cask upgrade
+echo "done!"
+
 echo "### homebrew: remove dead symlinks from the Homebrew prefix"
 brew prune
 echo "done!"
