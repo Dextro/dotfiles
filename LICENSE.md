@@ -1,6 +1,6 @@
 The MIT License
 
-Copyright (c) Bert Pattyn, http://dextrose.be
+Copyright (c) Bert Pattyn, https://dextrose.be
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
