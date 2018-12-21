@@ -5,28 +5,22 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
-# upgrade mac os x
-echo "### upgrade Mac OS X..."
+echo "### Mac OS X: upgrade..."
 sudo softwareupdate -ia
 echo "done!"
 
-# Upgrade homebrew
-echo "### upgrade homebrew..."
+echo "### homebrew: update..."
 brew update
 echo "done!"
 
-# Upgrade all outdated brew packages
-echo "### upgrade all outdated brew packages..."
-brew upgrade `brew outdated`
+echo "### homebrew: doctor..."
+brew doctor
 echo "done!"
 
-# Deletes all packages in the node_modules folder that are not referenced
-# as a dependency in the package.json file.
-echo "### delete unused packages..."
-apm --color clean
+echo "### homebrew: upgrade all outdated brew packages..."
+brew upgrade
 echo "done!"
 
-# Upgrade out of date packages installed to ~/.atom/packages
-echo "### upgrade out of date packages..."
-apm --color upgrade
+echo "### homebrew: remove dead symlinks from the Homebrew prefix"
+brew prune
 echo "done!"
