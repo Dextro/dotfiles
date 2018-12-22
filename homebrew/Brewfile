@@ -1,0 +1,120 @@
+# Taps
+tap 'caskroom/cask'
+tap 'caskroom/eid'
+tap 'caskroom/fonts'
+tap 'caskroom/versions'
+tap 'homebrew/bundle'
+
+# Binaries
+brew 'ack' # https://beyondgrep.com/
+brew 'awscli' # Official Amazon AWS command-line interface
+brew 'bash' # Bash 4
+brew 'bat' # clone of cat with syntax highlighting and Git integration
+brew 'composer'
+brew 'coreutils' # utils that come with macOS are outdated
+brew 'curl', args: ["with-libssh2", "with-nghttp2", "with-openssl"] # Get a file from an HTTP, HTTPS or FTP server
+brew 'exiv2' # EXIF and IPTC metadata manipulation library and tools
+brew 'findutils', args: ["with-default-names"] # Install GNU `find`, `locate`, `updatedb`, and `xargs`
+brew 'git' # Distributed revision control system - https://git-scm.com/
+brew 'git-flow-avh' # AVH edition of git-flow
+brew 'gnu-sed', args: ["with-default-names"] # Install GNU `sed`, overwriting the built-in `sed`
+brew 'gnupg2' # GNU Pretty Good Privacy (PGP) package
+brew 'grc' # Colorize logfiles and command output
+brew 'grep', args: ["with-default-names"] # https://www.gnu.org/software/grep/
+brew 'httpie' # User-friendly cURL replacement (command-line HTTP client)
+brew 'hping' # Command-line oriented TCP/IP packet assembler/analyzer
+brew 'htop' # Improved top (interactive process viewer)
+brew 'jmeter' # Load testing and performance measurement application
+brew 'kubernetes-helm' # The Kubernetes package manager
+brew 'lastpass-cli' # LastPass command-line interface tool
+brew 'mas' # Mac App Store command-line interface
+brew 'mtr' # 'traceroute' and 'ping' in a single tool
+brew 'nikto' # Web server scanner
+brew 'nmap' # Port scanning utility for large networks
+brew 'openssl' # SSL/TLS cryptography library
+brew 'packer' # Tool for creating identical machine images for multiple platforms
+brew 'pkg-config'
+brew 'rclone' # Rsync for cloud storage
+brew 'rename' # Perl-powered file rename script with many helpful built-ins
+brew 'siege' # HTTP regression testing and benchmarking utility
+brew 'speedtest-cli' # Command-line interface for https://speedtest.net bandwidth tests
+brew 'ssh-copy-id' # Add a public key to a remote machine's authorized_keys file
+brew 'tcping' # TCP connect to the given IP/port combo
+brew 'telnet' # User interface to the TELNET protocol
+brew 'tig' # Text interface for Git repositories
+brew 'trash' # CLI tool that moves files or folder to the trash
+brew 'tree' # http://mama.indstate.edu/users/ice/tree/
+brew 'vim', args:["override-system-vi"] # https://www.vim.org/
+brew 'watch' # Executes a program periodically, showing output fullscreen
+brew 'wget' # Internet file retriever
+brew 'zsh' # UNIX shell (command interpreter)
+brew 'zsh-completions' # Additional completion definitions for zsh
+
+# Development
+brew 'ansible' # Automate deployment, configuration, and upgrading
+brew 'php'
+brew 'imagemagick'
+# brew 'mysql'
+brew 'node'
+# brew 'redis'
+
+# Apps
+cask 'alfred'
+cask 'docker'
+cask 'dropbox'
+cask 'eid-be'
+cask 'eid-be-viewer'
+cask 'firefox'
+cask 'google-drive-file-stream'
+cask 'google-cloud-sdk'
+cask 'google-chrome'
+cask 'insomnia'
+cask 'java'
+cask 'keepingyouawake'
+cask 'keka'
+cask 'keybase'
+cask 'moom'
+cask 'mysqlworkbench'
+cask 'powershell'
+cask 'sequel-pro'
+cask 'slack'
+# cask 'tor-browser'
+# cask 'tower2'
+cask 'transmit'
+cask 'vagrant'
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
+cask 'xquartz'
+
+# # Quicklook
+# cask 'qlcolorcode'
+# cask 'qlmarkdown'
+# cask 'quicklook-json'
+# cask 'quicklook-csv'
+# cask 'qlstephen'
+
+# # Fonts
+cask 'font-fira-code'
+cask 'font-fira-mono'
+cask 'font-fira-mono-for-powerline'
+cask 'font-fira-sans'
+# cask 'font-lato'
+# cask 'font-open-sans'
+# cask 'font-roboto'
+# cask 'font-source-code-pro-for-powerline'
+# cask 'font-source-code-pro'
+# cask 'font-source-sans-pro'
+# cask 'font-source-serif-pro'
+
+# # Mac App Store
+# mas '1Password', id: 1333542190
+# mas 'Byword', id: 420212497
+# mas 'Giphy Capture', id: 668208984
+# mas 'Keynote', id: 409183694
+# mas 'Sip', id: 507257563
+# mas 'Spark', id: 1176895641
+# mas 'The Unarchiver', id: 425424353
+# mas 'Things', id: 904280696
+# mas 'Tweetbot', id: 1384080005
+# mas 'WhatsApp', id: 1147396723 
+
