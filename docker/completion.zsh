@@ -1,7 +1,7 @@
 # run script/install first
 
-docker_completion_file="$ZSH/cache/_docker_completion"
-docker_compose_completion_file="$ZSH/cache/_docker_compose_completion"
+docker_completion_file="$ZSH/cache/docker-completion"
+docker_compose_completion_file="$ZSH/cache/docker-compose-completion"
 
 if test -f $docker_completion_file
 then
