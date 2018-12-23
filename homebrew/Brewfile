@@ -53,6 +53,7 @@ brew 'zsh-completions' # Additional completion definitions for zsh
 # Development
 brew 'ansible' # Automate deployment, configuration, and upgrading
 brew 'php'
+brew 'python@2'
 brew 'imagemagick'
 # brew 'mysql'
 brew 'node'
