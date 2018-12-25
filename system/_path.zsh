@@ -2,7 +2,10 @@
 export PATH="/usr/local/sbin:$PATH"
 
 # reset PATH variable
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
+export PATH=$(getconf PATH)
+
+# add homebrew stuff
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # add dotfiles bin folder to PATH
 export PATH="$ZSH/bin:$PATH"
