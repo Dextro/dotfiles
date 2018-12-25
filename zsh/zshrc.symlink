@@ -1,5 +1,5 @@
 # dotfiles debug
-export DOTFILES_DEBUG=true
+export DOTFILES_DEBUG=false
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
