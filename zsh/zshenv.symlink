@@ -15,8 +15,8 @@ export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+# shortcut to this dotfiles path is $DOTFILES
+export DOTFILES=$HOME/.dotfiles
 
 # your project folder that we can `p [tab]` to
 export PROJECTS=~/Projects

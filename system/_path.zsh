@@ -8,7 +8,7 @@ export PATH=$(getconf PATH)
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # add dotfiles bin folder to PATH
-export PATH="$ZSH/bin:$PATH"
+export PATH="$DOTFILES/bin:$PATH"
 
 # add composer stuff to PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"

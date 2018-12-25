@@ -31,7 +31,7 @@ cdpath=(.)
 
 # Use caching so that commands like apt and dpkg complete are useable
 zstyle ':completion::complete:*' use-cache 1
-zstyle ':completion::complete:*' cache-path $ZSH/cache/
+zstyle ':completion::complete:*' cache-path $DOTFILES/cache/
 
 # Don't complete uninteresting users
 zstyle ':completion:*:*:*:users' ignored-patterns \

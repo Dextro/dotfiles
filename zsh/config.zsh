@@ -7,7 +7,7 @@ fi
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-autoload -U $ZSH/functions/*(:t)
+autoload -U $DOTFILES/functions/*(:t)
 
 setopt NO_HUP
 setopt NO_LIST_BEEP
