@@ -1,3 +1,6 @@
+# dotfiles debug
+export ZSH_DEBUG=false
+
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
@@ -12,12 +15,14 @@ config_files=($ZSH/**/*.zsh)
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
 do
+  if [ "$ZSH_DEBUG" = true ]; then echo "→ load path file: $file"; fi # debug
   source $file
 done
 
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
+  if [ "$ZSH_DEBUG" = true ]; then echo "→ load other file: $file"; fi # debug
   source $file
 done
 
@@ -28,6 +33,7 @@ compinit
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
 do
+  if [ "$ZSH_DEBUG" = true ]; then echo "→ load completion file: $file"; fi # debug
   source $file
 done
 
