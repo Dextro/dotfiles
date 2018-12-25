@@ -18,3 +18,6 @@ alias cc="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; echo 'c
 
 # clear cache of Mac OS X 10.10.3 and lower
 # alias cc="sudo discoveryutil udnsflushcaches && echo 'cache cleared'"
+
+# GAM
+alias gam="~/bin/gam/gam"
