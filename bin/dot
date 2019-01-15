@@ -26,5 +26,5 @@ brew cask upgrade
 echo "done!"
 
 echo "### homebrew: remove dead symlinks from the Homebrew prefix"
-brew prune
+brew cleanup
 echo "done!"
