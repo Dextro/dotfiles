@@ -12,12 +12,12 @@ brew 'bash' # Bash 4
 brew 'bat' # clone of cat with syntax highlighting and Git integration
 brew 'composer'
 brew 'coreutils' # utils that come with macOS are outdated
-brew 'curl', args: ["with-libssh2", "with-nghttp2", "with-openssl"] # Get a file from an HTTP, HTTPS or FTP server
+brew 'curl' # Get a file from an HTTP, HTTPS or FTP server
 brew 'exiv2' # EXIF and IPTC metadata manipulation library and tools
 brew 'findutils' # Install GNU `find`, `locate`, `updatedb`, and `xargs`
 brew 'git' # Distributed revision control system - https://git-scm.com/
 brew 'git-flow-avh' # AVH edition of git-flow
-brew 'gnu-sed', args: ["with-default-names"] # Install GNU `sed`, overwriting the built-in `sed`
+brew 'gnu-sed' # Install GNU `sed`
 brew 'gnupg2' # GNU Pretty Good Privacy (PGP) package
 brew 'grc' # Colorize logfiles and command output
 brew 'grep', args: ["with-default-names"] # https://www.gnu.org/software/grep/
@@ -44,7 +44,7 @@ brew 'telnet' # User interface to the TELNET protocol
 brew 'tig' # Text interface for Git repositories
 brew 'trash' # CLI tool that moves files or folder to the trash
 brew 'tree' # http://mama.indstate.edu/users/ice/tree/
-brew 'vim', args:["override-system-vi"] # https://www.vim.org/
+brew 'vim' # https://www.vim.org/
 brew 'watch' # Executes a program periodically, showing output fullscreen
 brew 'wget' # Internet file retriever
 brew 'zsh' # UNIX shell (command interpreter)
@@ -64,8 +64,6 @@ brew 'node@10'
 cask 'alfred'
 cask 'docker'
 cask 'dropbox'
-cask 'eid-be'
-cask 'eid-be-viewer'
 cask 'firefox'
 cask 'fork'
 cask 'google-drive-file-stream'
@@ -110,7 +108,6 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # # Mac App Store
-mas 'Byword', id: 420212497
 mas 'Spark', id: 1176895641
 mas 'The Unarchiver', id: 425424353
 # mas 'WhatsApp', id: 1147396723 
