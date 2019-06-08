@@ -38,3 +38,6 @@ do
 done
 
 unset config_files
+
+# iTerm2 Shell
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
