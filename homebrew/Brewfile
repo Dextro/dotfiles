@@ -20,14 +20,13 @@ brew 'git-flow-avh' # AVH edition of git-flow
 brew 'gnu-sed' # Install GNU `sed`
 brew 'gnupg2' # GNU Pretty Good Privacy (PGP) package
 brew 'grc' # Colorize logfiles and command output
-brew 'grep', args: ["with-default-names"] # https://www.gnu.org/software/grep/
+brew 'grep' # https://www.gnu.org/software/grep/
 brew 'httpie' # User-friendly cURL replacement (command-line HTTP client)
 brew 'hping' # Command-line oriented TCP/IP packet assembler/analyzer
 brew 'htop' # Improved top (interactive process viewer)
 brew 'jmeter' # Load testing and performance measurement application
 brew 'kubernetes-helm' # The Kubernetes package manager
 brew 'lastpass-cli' # LastPass command-line interface tool
-brew 'mas' # Mac App Store command-line interface
 brew 'mtr' # 'traceroute' and 'ping' in a single tool
 brew 'nikto' # Web server scanner
 brew 'nmap' # Port scanning utility for large networks
@@ -70,6 +69,7 @@ cask 'google-drive-file-stream'
 cask 'google-cloud-sdk'
 cask 'google-chrome'
 cask 'insomnia'
+cask 'iterm2'
 cask 'java'
 cask 'keepingyouawake'
 cask 'keka'
@@ -80,6 +80,7 @@ cask 'powershell'
 cask 'sequel-pro'
 cask 'slack'
 cask 'tor-browser'
+cask 'telegram'
 cask 'transmit'
 cask 'vagrant'
 cask 'virtualbox'
@@ -106,9 +107,4 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
-
-# # Mac App Store
-mas 'Spark', id: 1176895641
-mas 'The Unarchiver', id: 425424353
-# mas 'WhatsApp', id: 1147396723 
 
