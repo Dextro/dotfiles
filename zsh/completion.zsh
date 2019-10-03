@@ -16,7 +16,8 @@ else
   zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 fi
 
-zstyle ':completion:*' list-colors ''
+# zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # should this be in keybindings?
 bindkey -M menuselect '^o' accept-and-infer-next-history
@@ -59,3 +60,9 @@ fi
 
 # pasting with tabs doesn't perform completion
 zstyle ':completion:*' insert-tab pending
+
+h=()
+if [[ -r ~/.ssh/conf.d ]]; then
+  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/conf.d/*)"}:#Host *}#Host }:#*[*?]*})
+fi
+zstyle ':completion:*:(scp|rsync|ssh):*' hosts $h
