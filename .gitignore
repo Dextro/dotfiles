@@ -9,4 +9,7 @@ atom.symlink/compile-cache
 
 git/gitconfig.symlink
 
+# ignore Brewfile lock
+Brewfile.lock.json
+
 cache/
