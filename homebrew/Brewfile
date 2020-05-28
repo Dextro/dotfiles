@@ -20,6 +20,7 @@ brew 'git' # Distributed revision control system - https://git-scm.com/
 brew 'git-flow-avh' # AVH edition of git-flow
 brew 'gnu-sed' # Install GNU `sed`
 brew 'gnupg2' # GNU Pretty Good Privacy (PGP) package
+brew 'go' # GO language
 brew 'grc' # Colorize logfiles and command output
 brew 'grep' # https://www.gnu.org/software/grep/
 brew 'httpie' # User-friendly cURL replacement (command-line HTTP client)
@@ -34,6 +35,8 @@ brew 'nmap' # Port scanning utility for large networks
 brew 'openssl' # SSL/TLS cryptography library
 brew 'packer' # Tool for creating identical machine images for multiple platforms
 brew 'pkg-config'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
 brew 'rclone' # Rsync for cloud storage
 brew 'rename' # Perl-powered file rename script with many helpful built-ins
 brew 'siege' # HTTP regression testing and benchmarking utility
@@ -54,10 +57,10 @@ brew 'zsh-completions' # Additional completion definitions for zsh
 brew 'ansible' # Automate deployment, configuration, and upgrading
 brew 'gitlab-runner'
 brew 'php'
-brew 'python@2'
+brew 'python'
 brew 'imagemagick'
 # brew 'mysql'
-brew 'node@10'
+brew 'node@12'
 # brew 'redis'
 
 # Apps
@@ -69,18 +72,14 @@ cask 'fork'
 cask 'google-drive-file-stream'
 cask 'google-cloud-sdk'
 cask 'google-chrome'
-cask 'insomnia'
 cask 'iterm2'
 cask 'java'
 cask 'keepingyouawake'
 cask 'keka'
-cask 'keybase'
-cask 'moom'
 cask 'mysqlworkbench'
 cask 'powershell'
 cask 'sequel-pro'
 cask 'slack'
-cask 'tor-browser'
 cask 'telegram'
 cask 'transmit'
 cask 'vagrant'
@@ -109,4 +108,3 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 cask 'font-microsoft-office'
-
