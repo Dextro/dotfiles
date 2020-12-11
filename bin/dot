@@ -22,7 +22,7 @@ brew upgrade
 echo "done!"
 
 echo "### homebrew: upgrade all outdated brew cask packages..."
-brew cask upgrade
+brew upgrade --cask
 echo "done!"
 
 echo "### homebrew: remove dead symlinks from the Homebrew prefix"
