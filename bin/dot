@@ -9,6 +9,10 @@ echo "### Mac OS X: upgrade..."
 sudo softwareupdate -ia
 echo "done!"
 
+echo "### Mac OS X: upgrade apps..."
+mas upgrade
+echo "done!"
+
 echo "### homebrew: update..."
 brew update
 echo "done!"
@@ -17,12 +21,8 @@ echo "### homebrew: doctor..."
 brew doctor
 echo "done!"
 
-echo "### homebrew: upgrade all outdated brew packages..."
+echo "### homebrew: upgrade all outdated brew packages and casks..."
 brew upgrade
-echo "done!"
-
-echo "### homebrew: upgrade all outdated brew cask packages..."
-brew upgrade --cask
 echo "done!"
 
 echo "### homebrew: remove dead symlinks from the Homebrew prefix"
