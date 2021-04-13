@@ -54,3 +54,5 @@ if [ -f '/private/tmp/google-cloud-sdk/path.zsh.inc' ]; then . '/private/tmp/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/private/tmp/google-cloud-sdk/completion.zsh.inc' ]; then . '/private/tmp/google-cloud-sdk/completion.zsh.inc'; fi
+
+function gam() { "/Users/bert/bin/gam/gam" "$@" ; }
