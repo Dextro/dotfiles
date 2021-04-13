@@ -28,6 +28,7 @@ brew 'htop' # Improved top (interactive process viewer)
 brew 'jmeter' # Load testing and performance measurement application
 brew 'kubernetes-helm' # The Kubernetes package manager
 brew 'lastpass-cli' # LastPass command-line interface tool
+brew 'mas' # A simple command line interface for the Mac App Store
 brew 'mtr' # 'traceroute' and 'ping' in a single tool
 brew 'nikto' # Web server scanner
 brew 'nmap' # Port scanning utility for large networks
@@ -59,7 +60,7 @@ brew 'php'
 brew 'python'
 brew 'imagemagick'
 # brew 'mysql'
-brew 'node@12'
+brew 'node@14'
 # brew 'redis'
 
 # Apps
@@ -68,12 +69,11 @@ cask 'docker'
 cask 'dropbox'
 cask 'firefox'
 cask 'fork'
-cask 'google-drive-file-stream'
+cask 'google-drive'
 cask 'google-cloud-sdk'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'java'
-cask 'keepingyouawake'
 cask 'keka'
 cask 'mysqlworkbench'
 cask 'powershell'
