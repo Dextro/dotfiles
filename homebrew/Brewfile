@@ -26,7 +26,7 @@ brew 'httpie' # User-friendly cURL replacement (command-line HTTP client)
 brew 'hping' # Command-line oriented TCP/IP packet assembler/analyzer
 brew 'htop' # Improved top (interactive process viewer)
 brew 'jmeter' # Load testing and performance measurement application
-brew 'kubernetes-helm' # The Kubernetes package manager
+brew 'helm' # The Kubernetes package manager
 brew 'lastpass-cli' # LastPass command-line interface tool
 brew 'mas' # A simple command line interface for the Mac App Store
 brew 'mtr' # 'traceroute' and 'ping' in a single tool
@@ -42,6 +42,7 @@ brew 'rename' # Perl-powered file rename script with many helpful built-ins
 brew 'siege' # HTTP regression testing and benchmarking utility
 brew 'speedtest-cli' # Command-line interface for https://speedtest.net bandwidth tests
 brew 'ssh-copy-id' # Add a public key to a remote machine's authorized_keys file
+brew 'svn'
 brew 'tcping' # TCP connect to the given IP/port combo
 brew 'telnet' # User interface to the TELNET protocol
 brew 'tig' # Text interface for Git repositories
@@ -60,28 +61,26 @@ brew 'php'
 brew 'python'
 brew 'imagemagick'
 # brew 'mysql'
-brew 'node@14'
+brew 'node@16'
 # brew 'redis'
 
 # Apps
 cask 'alfred'
 cask 'docker'
-cask 'dropbox'
+# cask 'dropbox'
 cask 'firefox'
 cask 'fork'
 cask 'google-drive'
 cask 'google-cloud-sdk'
 cask 'google-chrome'
 cask 'iterm2'
-cask 'java'
-cask 'keka'
 cask 'mysqlworkbench'
 cask 'powershell'
 cask 'sequel-pro'
 cask 'slack'
-cask 'telegram'
+# cask 'telegram'
 cask 'transmit'
-cask 'vagrant'
+# cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
@@ -89,10 +88,8 @@ cask 'xquartz'
 
 # # Quicklook
 cask 'qlcolorcode'
-cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
-cask 'qlstephen'
 
 # # Fonts
 cask 'font-fira-code'
