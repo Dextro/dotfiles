@@ -9,5 +9,5 @@ cd "$(dirname $0)"/..
 # first homebrew installer
 sh -c "./homebrew/install.sh"
 
-# the all other installers
+# all other installers
 find . -name 'install.sh' -not -path "./homebrew/*" | while read installer ; do sh -c "${installer}" ; done
