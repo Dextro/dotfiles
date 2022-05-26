@@ -7,7 +7,9 @@
 if test ! $(which brew)
 then
   echo "→→→ Installing Homebrew..."
-  CI=1 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  
+  export PATH="/opt/homebrew/bin:$PATH"
 fi
 
 # Make sure we’re using the latest Homebrew
@@ -21,3 +23,7 @@ brew upgrade
 # Homebrew bundle
 echo "→→→ Homebrew: run bundle..."
 brew bundle
+
+# Homebrew disable analytics
+# https://docs.brew.sh/Analytics
+brew analytics off
