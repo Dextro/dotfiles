@@ -35,6 +35,12 @@ files in there. Anything with an extension of `.zsh` will get automatically
 included into your shell. Anything with an extension of `.symlink` will get
 symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
+When you run `script/install`, all the `install.sh` files inside the topic 
+directories will be run. This is perfect for the first installation.
+
+use `.localrc` for SUPER SECRET CRAP that you don't want in your public, 
+versioned repo.
+
 ## components
 
 There's a few special files in the hierarchy.
