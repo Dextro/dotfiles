@@ -1,6 +1,8 @@
 git/gitconfig.symlink
+cache/
 
 # ignore Brewfile lock
 Brewfile.lock.json
 
-cache/
+# ignore iterm2
+iterm2/
