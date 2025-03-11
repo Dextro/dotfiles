@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # dotfiles debug
-export DOTFILES_DEBUG=true
+export DOTFILES_DEBUG=false
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
@@ -43,10 +43,3 @@ do
 done
 
 unset config_files
-
-# # iTerm2 Shell
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# # enable pyenv
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
