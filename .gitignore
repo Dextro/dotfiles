@@ -6,3 +6,7 @@ Brewfile.lock.json
 
 # ignore iterm2
 iterm2/
+
+# gam
+gam/
+!gam/gam.zsh
